@@ -101,16 +101,16 @@
 			isa = PBXGroup;
 			children = (
 				3CBA33AB25DF97F20087B92F /* AppDelegate.swift */,
-				3CBA33AD25DF97F20087B92F /* SceneDelegate.swift */,
-				3CBA33AF25DF97F20087B92F /* LoginVC.swift */,
-				3C9D5BB225FB464E0088D26C /* mainTabVC.swift */,
-				3CBA33B125DF97F20087B92F /* Main.storyboard */,
-				3C502C792601D8CE0013CF2D /* CollectionViewController_1.swift */,
-				3CC6C5EA2609E666008457F6 /* CollectionViewController_3.swift */,
-				3CC6C5E72609DEB3008457F6 /* CollectionViewController_2.swift */,
 				3CBA33B425DF97F70087B92F /* Assets.xcassets */,
-				3CBA33B625DF97F70087B92F /* LaunchScreen.storyboard */,
+				3C502C792601D8CE0013CF2D /* CollectionViewController_1.swift */,
+				3CC6C5E72609DEB3008457F6 /* CollectionViewController_2.swift */,
+				3CC6C5EA2609E666008457F6 /* CollectionViewController_3.swift */,
 				3CBA33B925DF97F70087B92F /* Info.plist */,
+				3CBA33B625DF97F70087B92F /* LaunchScreen.storyboard */,
+				3CBA33AF25DF97F20087B92F /* LoginVC.swift */,
+				3CBA33B125DF97F20087B92F /* Main.storyboard */,
+				3C9D5BB225FB464E0088D26C /* mainTabVC.swift */,
+				3CBA33AD25DF97F20087B92F /* SceneDelegate.swift */,
 			);
 			path = "i-Inverter";
 			sourceTree = "<group>";

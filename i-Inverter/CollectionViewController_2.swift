@@ -45,66 +45,71 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
         myList.removeAll()
         myList2d.removeAll()
         
-        var JP: String?
-        JP = ""
-        let url = URL(string: "https://i-inverter.motech.com.tw/vUserApisvr/api/values")
-        var request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)
-        print("22222")
-        request.httpBody = "FunCode=V02_RwdDashboard04&FunValues='admin'".data(using: .utf8)
-        request.httpMethod = "POST"
-        print("33333")
-        let session = URLSession(configuration: .default)
-        let dataTask = session.dataTask(with: request) { [self] (data, response, error) in
-            if let data = data {
-                let html = String(data: data, encoding: .utf8)
-                //print(html!)
-                
-                do{
-                    let aqi = try! JSONDecoder().decode([AQI].self, from: data)
+        DispatchQueue.global().async{
+            var JP: String?
+            JP = ""
+            let url = URL(string: "https://i-inverter.motech.com.tw/vUserApisvr/api/values")
+            var request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)
+            print("22222")
+            request.httpBody = "FunCode=V02_RwdDashboard04&FunValues='admin'".data(using: .utf8)
+            request.httpMethod = "POST"
+            print("33333")
+            let session = URLSession(configuration: .default)
+            let dataTask = session.dataTask(with: request) { [self] (data, response, error) in
+                if let data = data {
+                    let html = String(data: data, encoding: .utf8)
+                    //print(html!)
                     
-                    //print("OK")
-                    
-                    aqi.forEach { (p) in
-                        //print(p)
-                        //JP = (p).sAccount
-                        if let _P:String? = (p).sSite_Name {
-                            JP = _P
-                            
-                            if (p).sSiteType == "2" {
-                                myList.append(JP!)
-                                //myList2Darr.append([JP!,String((p).nSHI)])
-                                myList2d.append(String((p).nSHI))
+                    do{
+                        let aqi = try! JSONDecoder().decode([AQI].self, from: data)
+                        
+                        //print("OK")
+                        
+                        aqi.forEach { (p) in
+                            //print(p)
+                            //JP = (p).sAccount
+                            if let _P:String? = (p).sSite_Name {
+                                JP = _P
+                                
+                                if (p).sSiteType == "2" {
+                                    myList.append(JP!)
+                                    //myList2Darr.append([JP!,String((p).nSHI)])
+                                    myList2d.append(String((p).nSHI))
+                                }
+                                
+                                
+                                //print("The JP is \(JP!)")
+                                
+                            } else {
+                                JP = ""
                             }
-                            
-                            
                             //print("The JP is \(JP!)")
                             
-                        } else {
-                            JP = ""
+                            
                         }
-                        //print("The JP is \(JP!)")
                         
+                        DispatchQueue.main.async{
+                            self.collectionView.reloadData()
+                        }
+                        
+                        print("YYYYY")
+                        
+                    } catch {
+                        print("Catch: The JP is \(JP!)")
                         
                     }
                     
-                    print("YYYYY")
-                    
-                } catch {
-                    print("Catch: The JP is \(JP!)")
-                    
                 }
-                
+                //print(error!)
             }
-            //print(error!)
-        }
-        
-        print("44444")
-        
-        dataTask.resume()
-        
+            
+            print("44444")
+            
+            dataTask.resume()
+        } //end of DispatchQueue.global().async
         
         print("55555")
-        sleep(3)
+        //sleep(3)
         //myList.remove(at: 0)
         
     }
