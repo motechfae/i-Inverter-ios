@@ -16,8 +16,10 @@ class CollectionViewController_1: UICollectionViewController, UICollectionViewDe
     //let myList = ["茂迪南科五廠","茂迪南科二廠","永興祥木業","茂迪南科六廠(啟碁)" ,"家樂福安平店","雲林莿桐茂森","台南果菜市場-舊冰庫","台南果菜市場-集貨場","案場一","案場二"]
     
     var myList = [String]()
+    var myList_real = [String]()
     //var myList = ["defaultF"]
     var myList2d = [String]()
+    var myList2d_real = [String]()
     
     //var myList2Darr = [[String]]()
     
@@ -97,6 +99,8 @@ class CollectionViewController_1: UICollectionViewController, UICollectionViewDe
                             
                             
                         }
+                        myList_real = myList
+                        myList2d_real = myList2d
                         
                         DispatchQueue.main.async{
                             self.collectionView.reloadData()
@@ -325,35 +329,45 @@ class CollectionViewController_1: UICollectionViewController, UICollectionViewDe
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if(!(searchBar.text?.isEmpty)!){
-            //reload your data source if necessary
-            self.collectionView?.reloadData()
-
-        }
         
-        print("searchbar_click")
         
-        /*
-        self.data.removeAll()
-                 
-        for item in self.realData {
-            if (item.firstName.lowercased().contains(searchBar.text!.lowercased())) {
-                    self.data.append(item)
+        self.myList.removeAll()
+        self.myList2d.removeAll()
+        for index in 0...(myList_real.count - 1){
+            if (myList_real[index].lowercased().contains(searchBar.text!.lowercased())){
+                self.myList.append(myList_real[index])
+                self.myList2d.append(myList2d_real[index])
             }
         }
                  
         if (searchBar.text!.isEmpty) {
-            self.data = self.realData
+            self.myList = self.myList_real
+            self.myList2d = self.myList2d_real
         }
         self.collectionView.reloadData()
-        */
+        
+        
+        print("searchbar_click")
+        
+        
+        
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if(searchText.isEmpty){
-            //reload your data source if necessary
-            self.collectionView?.reloadData()
+        self.myList.removeAll()
+        self.myList2d.removeAll()
+        for index in 0...(myList_real.count - 1){
+            if (myList_real[index].lowercased().contains(searchBar.text!.lowercased())){
+                self.myList.append(myList_real[index])
+                self.myList2d.append(myList2d_real[index])
+            }
         }
+                 
+        if (searchText.isEmpty) {
+            self.myList = self.myList_real
+            self.myList2d = self.myList2d_real
+        }
+        self.collectionView.reloadData()
         
         print("Search data is \(searchText)")
     }
