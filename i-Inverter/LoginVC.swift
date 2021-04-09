@@ -8,6 +8,7 @@
 import UIKit
 
 var str_PWbySegueBack0: String = ""
+var uID_global: String = ""
 
 class LoginVC: UIViewController {
     
@@ -212,7 +213,7 @@ class LoginVC: UIViewController {
                     
                     request.httpBody = "FunCode=V01_Login01&FunValues='\(u_ID!)';'\(u_PW!)'".data(using: .utf8)
                     request.httpMethod = "POST"
-                    
+                    uID_global = u_ID!
                     let session = URLSession(configuration: .default)
                     let dataTask = session.dataTask(with: request) { (data, response, error) in
                         if let data = data {
@@ -321,6 +322,7 @@ class LoginVC: UIViewController {
                     
                     request.httpBody = "FunCode=V01_Login01&FunValues='\(u_ID!)';'\(u_PW!)'".data(using: .utf8)
                     request.httpMethod = "POST"
+                    uID_global = u_ID!
                     //print("FunCode=V01_Login01&FunValues='\(u_ID!)';'\(u_PW!)'")
                     let session = URLSession(configuration: .default)
                     let dataTask = session.dataTask(with: request) { (data, response, error) in

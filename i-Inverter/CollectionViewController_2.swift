@@ -53,7 +53,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
             let url = URL(string: "https://i-inverter.motech.com.tw/vUserApisvr/api/values")
             var request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)
             print("22222")
-            request.httpBody = "FunCode=V02_RwdDashboard04&FunValues='admin'".data(using: .utf8)
+            request.httpBody = "FunCode=V02_RwdDashboard04&FunValues='\(uID_global)'".data(using: .utf8)
             request.httpMethod = "POST"
             print("33333")
             let session = URLSession(configuration: .default)

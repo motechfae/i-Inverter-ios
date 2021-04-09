@@ -237,6 +237,9 @@
                                     <rect key="frame" x="0.0" y="-2" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="cbN-1H-hgp" id="lHm-nu-xWN"/>
+                                    </connections>
                                 </searchBar>
                             </subviews>
                         </collectionReusableView>
@@ -309,6 +312,9 @@
                                     <rect key="frame" x="0.0" y="3" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="jyY-Kh-z6F" id="Tfo-ZI-H1V"/>
+                                    </connections>
                                 </searchBar>
                             </subviews>
                         </collectionReusableView>
