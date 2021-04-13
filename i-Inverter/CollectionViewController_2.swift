@@ -290,6 +290,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        /*
         self.myList.removeAll()
         self.myList2d.removeAll()
         for index in 0...(myList_real.count - 1){
@@ -304,7 +305,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
             self.myList2d = self.myList2d_real
         }
         self.collectionView.reloadData()
-        
+        */
         print("Search data is \(searchText)")
     }
     
