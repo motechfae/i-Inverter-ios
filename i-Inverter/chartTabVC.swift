@@ -1,18 +1,22 @@
 //
-//  mainTabVC.swift
+//  chartTabVC.swift
 //  i-Inverter
 //
-//  Created by Alton Huang on 2021/3/12.
+//  Created by Alton Huang on 2021/4/15.
 //
 
 import UIKit
 
-class mainTabVC: UITabBarController {
-    
+var g_sSiteNo: String = ""
+var g_sSite_Name: String = ""
+var g_sZoneNo: String = ""
+
+class chartTabVC: UITabBarController {
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
      
-        let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0)]
+        let systemFontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14.0)]
         UITabBarItem.appearance().setTitleTextAttributes(systemFontAttributes, for: UIControl.State.normal)
      }
     
@@ -20,10 +24,12 @@ class mainTabVC: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
         
+        
+        print("chartTabVC: " + g_sSiteNo + "/" + g_sSite_Name + "/" + g_sZoneNo)
         
     }
-    
     
 
     
@@ -33,21 +39,10 @@ class mainTabVC: UITabBarController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        print("(2)oooooo")
+        
+        print("(chart)oooooo")
+        
     }
     
-    
-    
-    
-    override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     
-        if isMovingFromParent {
-            print("ccc")
-            
-            str_PWbySegueBack0 = "LoginAgain"
-            print("(2)str_PWbySegueBack0: \(str_PWbySegueBack0)")
-        }
-     }
-     
+
 }

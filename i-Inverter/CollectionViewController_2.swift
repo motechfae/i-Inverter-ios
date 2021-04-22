@@ -17,6 +17,8 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
     var myList2d = [String]()
     var myList2d_real = [String]()
     
+    var myList_sSiteNo = [String]()
+    
     //var myList2Darr = [[String]]()
     
     static let width1 = floor((UIScreen.main.bounds.width - 4) / 2)
@@ -77,6 +79,8 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
                                     myList.append(JP!)
                                     //myList2Darr.append([JP!,String((p).nSHI)])
                                     myList2d.append(String((p).nSHI))
+                                    
+                                    myList_sSiteNo.append((p).sSiteNo)
                                 }
                                 
                                 
@@ -132,15 +136,17 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
         // Do any additional setup after loading the view.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        print("prepare(CVC2): " + g_sSiteNo + "/" + g_sSite_Name + "/" + g_sZoneNo)
     }
-    */
+    
 
     // MARK: UICollectionViewDataSource
 
@@ -236,7 +242,10 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             // handle tap events
-            print("You selected cell #\(indexPath.item)!")
+        print("You selected cell #\(indexPath.item)!")
+        
+        g_sSiteNo = myList_sSiteNo[indexPath.row]
+        g_sSite_Name = myList[indexPath.row]
     }
 
     

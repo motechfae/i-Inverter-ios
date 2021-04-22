@@ -227,6 +227,9 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <segue destination="YDT-SC-SCD" kind="show" identifier="segue_CVC2_to_ChartTabVC" id="OCO-Q6-TaM"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SearchBar2" id="7QK-l0-XAf">
@@ -302,6 +305,9 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <segue destination="YDT-SC-SCD" kind="show" identifier="segue_CVC3_to_ChartTabVC" id="a95-dn-Djj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SearchBar3" id="JGm-Al-ebi">
@@ -328,6 +334,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFk-OS-RBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2708.6956521739135" y="438.61607142857139"/>
+        </scene>
+        <!--Inverter-->
+        <scene sceneID="uxN-gj-bR7">
+            <objects>
+                <viewController id="muH-jq-jcA" customClass="ErrorCode_SiteVC" customModule="i_Inverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WgK-nt-JjD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qys-5W-MLE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="aDr-Sl-AYu" detailTextLabel="nVf-DV-sR1" style="IBUITableViewCellStyleSubtitle" id="CRV-Jx-rgz">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CRV-Jx-rgz" id="K1b-dh-3vf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aDr-Sl-AYu">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nVf-DV-sR1">
+                                                    <rect key="frame" x="20" y="31.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="muH-jq-jcA" id="U5t-yb-YCy"/>
+                                    <outlet property="delegate" destination="muH-jq-jcA" id="iZn-Wo-3wj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ahg-gx-b2s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qys-5W-MLE" firstAttribute="top" secondItem="Ahg-gx-b2s" secondAttribute="top" id="2Gf-HQ-94V"/>
+                            <constraint firstItem="qys-5W-MLE" firstAttribute="leading" secondItem="Ahg-gx-b2s" secondAttribute="leading" id="A2M-Ml-6iR"/>
+                            <constraint firstItem="Ahg-gx-b2s" firstAttribute="trailing" secondItem="qys-5W-MLE" secondAttribute="trailing" id="GjH-MM-sjE"/>
+                            <constraint firstItem="Ahg-gx-b2s" firstAttribute="bottom" secondItem="qys-5W-MLE" secondAttribute="bottom" id="JRG-kH-xbW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inverter" image="cells_32.png" id="oGQ-eM-tbY"/>
+                    <connections>
+                        <outlet property="tableView" destination="qys-5W-MLE" id="oaW-2r-lpA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfi-n4-sh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2183" y="1359"/>
+        </scene>
+        <!--Site-->
+        <scene sceneID="z1X-nj-32D">
+            <objects>
+                <viewController storyboardIdentifier="chartTab_Site" id="Pk0-u8-280" customClass="Chart_SiteVC" customModule="i_Inverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dG8-VE-PAm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NVp-HL-pXm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Site" image="analytics_32.png" id="2Hh-7m-tnf"/>
+                    <navigationItem key="navigationItem" id="3V6-de-K5Y">
+                        <barButtonItem key="backBarButtonItem" title="i-Inverter" id="Tkk-VP-UZS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Btd-34-vh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1470" y="1185"/>
+        </scene>
+        <!--Chart TabVC-->
+        <scene sceneID="wrB-wK-1E0">
+            <objects>
+                <tabBarController storyboardIdentifier="chartTabVC" id="YDT-SC-SCD" customClass="chartTabVC" customModule="i_Inverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="skV-eU-Swo">
+                        <barButtonItem key="backBarButtonItem" title="i-Inverter" id="idI-ud-EHR"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J2g-CJ-9iT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Pk0-u8-280" kind="relationship" relationship="viewControllers" id="CYE-ga-KQY"/>
+                        <segue destination="muH-jq-jcA" kind="relationship" relationship="viewControllers" id="q85-AS-BSH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYz-Za-pQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="1252"/>
         </scene>
         <!--北-->
         <scene sceneID="xNz-JV-lBv">
@@ -378,6 +485,9 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <segue destination="YDT-SC-SCD" kind="show" identifier="segue_CVC1_to_ChartTabVC" id="YaV-LM-7rF"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SearchBar1" id="f8D-hO-Y3v">
@@ -406,7 +516,12 @@
             <point key="canvasLocation" x="1239" y="429"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YaV-LM-7rF"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="analytics_32.png" width="32" height="32"/>
+        <image name="cells_32.png" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
