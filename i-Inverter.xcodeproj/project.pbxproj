@@ -176,6 +176,7 @@
 		3CBA339F25DF97F20087B92F = {
 			isa = PBXGroup;
 			children = (
+				3CE79EAA2626C50F00AA4A50 /* AAInfographics */,
 				3C4C4E082630026200C33143 /* analytics_16.png */,
 				3C4C4E072630026200C33143 /* analytics2_16.png */,
 				3C4C4E062630026200C33143 /* cells_16.png */,
@@ -187,7 +188,6 @@
 				3CB977E2262FDA5F0084123C /* connect.png */,
 				3CB977E3262FDA600084123C /* disconnect.png */,
 				3C4C4DF9262FFB6B00C33143 /* cells.png */,
-				3CE79EAA2626C50F00AA4A50 /* AAInfographics */,
 				3C63367B2602D64B003B8AD2 /* hi01.png */,
 				3C6336852602D688003B8AD2 /* hiAlert.png */,
 				3C63367E2602D688003B8AD2 /* hiAlertNew.png */,
@@ -591,13 +591,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7B766GB49;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alton0914.i-Inverter";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.motech.iInverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,13 +612,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7B766GB49;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alton0914.i-Inverter";
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.motech.iInverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
