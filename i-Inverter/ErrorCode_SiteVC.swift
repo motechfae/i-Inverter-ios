@@ -86,7 +86,12 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
                                     myList_nRS485ID.append(String((p).nRS485ID))
                                     myList_nEa.append(String((p).nEa))
                                     myList_dCreat_Time.append(JP_data!)
-                                    myList_sErrCode.append((p).sErrCode)
+                                    //myList_sErrCode.append((p).sErrCode)
+                                    if (p).sErrCode == "" {
+                                        myList_sErrCode.append("No Error")
+                                    } else {
+                                        myList_sErrCode.append((p).sErrCode)
+                                    }
                                     
                                     
                                 } else {
@@ -124,8 +129,7 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
             }
             
             dataTask.resume()
-            
-            //sleep(3)
+        
             
         } //end of DispatchQueue.global().async
         
@@ -228,6 +232,7 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
             label.autoresizesSubviews = true
             label.contentMode = .left
             
+            /*
             if tmpStr == "" {
                 label.textColor = UIColor.blue
                 label.text = "No Error"
@@ -235,6 +240,13 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
                 label.textColor = UIColor.red
                 label.text = tmpStr
             }
+            */
+            if tmpStr == "No Error" {
+                label.textColor = UIColor.blue
+            } else {
+                label.textColor = UIColor.red
+            }
+            label.text = tmpStr
 
             cell.accessoryView = label
         
@@ -252,6 +264,28 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
     }
 
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+        var tmpStr:String = myList_sErrCode[indexPath.row]
+        
+        if tmpStr == "" {
+            tmpStr = "No Error"
+        }
+        
+        print(tmpStr)
+        */
+        
+        //print(myList_sErrCode[indexPath.row])
+        
+        let alertController = UIAlertController(title: "Error Code", message: "\n" + myList_sErrCode[indexPath.row], preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "確定", style: .default) {
+            (action) in
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+        
+        //tableView.reloadData()
+
+    }
     
 }

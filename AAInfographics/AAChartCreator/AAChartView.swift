@@ -177,7 +177,7 @@ public class AAChartView: WKWebView {
                 ☠️☠️💀☠️☠️WARNING!!!!!!!!!!!!!!!!!!!! FBI WARNING !!!!!!!!!!!!!!!!!!!!WARNING☠️☠️💀☠️☠️
                 
                 """
-                print(errorInfo)
+                ///print(errorInfo)
             }
             #endif
 
@@ -202,10 +202,10 @@ public class AAChartView: WKWebView {
         let data = try? JSONSerialization.data(withJSONObject: modelJsonDic, options: .prettyPrinted)
         if data != nil {
             let prettyPrintedModelJson = String(data: data!, encoding: String.Encoding.utf8)
-            print("""
-                -----------🖨🖨🖨 console log AAOptions JSON information of AAChartView 🖨🖨🖨-----------:
-                \(prettyPrintedModelJson!)
-                """)
+            ///print("""
+             ///   -----------🖨🖨🖨 console log AAOptions JSON information of AAChartView 🖨🖨🖨-----------:
+             ///   \(prettyPrintedModelJson!)
+             ///   """)
         }
         #endif
         
