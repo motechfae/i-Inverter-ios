@@ -1224,6 +1224,60 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                 */
             ])
             
+        if paraStr.contains("nEa") {
+            if arr2D_F.count > 0 {
+                var myList_str = [Any] ()
+                for row in 0..<arr2D_F.count {
+                    if arr2D_F[row][1] == "nEa" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 0 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + "-" + "發電功率")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(0)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nEa" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        
+        if paraStr.contains("nPpv") {
+            if arr2D_F.count > 0 {
+                var myList_str = [Any] ()
+                for row in 0..<arr2D_F.count {
+                    if arr2D_F[row][1] == "nPpv" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 0 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + "-" + "輸入功率")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(0)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nPpv" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        
         if paraStr.contains("nVpv_A") {
             if arr2D_F.count > 0 {
                 
