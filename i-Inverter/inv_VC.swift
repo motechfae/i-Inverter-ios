@@ -7,7 +7,7 @@
 
 import UIKit
 
-class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate  {
+class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate  {
     
     /*
     var arraylist:[(title:String,check: Bool)]
@@ -25,6 +25,18 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
                   ("cc", "02_cc", false)
                 ]
     
+    var arraylist_real:[(title:String, index_title:String, check: Bool)]
+                 = [("aa", "00_aa", false),
+                  ("bb", "01_bb", false),
+                  ("cc", "02_cc", false)
+                ]
+    
+    var arraylist_SearchBar:[(title:String, index_title:String, check: Bool)]
+                 = [("aa", "00_aa", false),
+                  ("bb", "01_bb", false),
+                  ("cc", "02_cc", false)
+                ]
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -35,6 +47,8 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
         set_Inv.removeAll()
         
         arraylist.removeAll()
+        arraylist_real.removeAll()
+        
         
         /*
         var temp_Str:String = "abc"
@@ -47,6 +61,8 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
             //arraylist.append((i, false))
             
             arraylist.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
+            arraylist_real.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
+            arraylist_SearchBar.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
             temp_Int = temp_Int + 1
         }
         
@@ -182,6 +198,38 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
             }
         }
         
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        
+        self.arraylist.removeAll()
+        for index in 0...(arraylist_SearchBar.count - 1){
+            if (arraylist_SearchBar[index].title.lowercased().contains(searchBar.text!.lowercased())){
+                
+                self.arraylist.append(arraylist_SearchBar[index])
+            }
+        }
+                 
+        if (searchBar.text!.isEmpty) {
+            self.arraylist = self.arraylist_real
+        }
+        
+        self.tableView.reloadData()
+        
+        
+        print("searchbar_click")
+        
+        
+        
+    }
+    
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        print("Search data is \(searchText)")
     }
     
     

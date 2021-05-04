@@ -529,6 +529,9 @@
                             <constraint firstItem="Vke-re-KKs" firstAttribute="trailing" secondItem="Dvf-bg-I3K" secondAttribute="trailing" id="qt6-fJ-RQd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0Qb-xq-u35" id="MrT-od-zvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSK-3W-0Bq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

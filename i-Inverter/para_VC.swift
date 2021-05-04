@@ -7,7 +7,7 @@
 
 import UIKit
 
-class para_VC: UIViewController, UIAdaptivePresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate {
+class para_VC: UIViewController, UIAdaptivePresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var set_Para_temp = Set<String>()
     
@@ -31,6 +31,50 @@ class para_VC: UIViewController, UIAdaptivePresentationControllerDelegate, UITab
                   ("感測器_日照計", "16_nHi", false),
                   ("感測器_溫度計", "17_nTmp", false)
                 ]
+    
+    var arraylist_real:[(title:String, para:String, check: Bool)]
+                 = [("交流側_發電功率", "00_nEa", false),
+                  ("交流側_電壓", "01_nOVol", false),
+                  ("交流側_電流", "02_nOCur", false),
+                  ("直流側_輸入功率", "03_nPpv", false),
+                  ("直流側_輸入電壓-A串", "04_nVpv_A", false),
+                  ("直流側_輸入電壓-B串", "05_nVpv_B", false),
+                  ("直流側_輸入電壓-C串", "06_nVpv_C", false),
+                  ("直流側_輸入電壓-D串", "07_nVpv_D", false),
+                  ("直流側_輸入電壓-E串", "08_nVpv_E", false),
+                  ("直流側_輸入電壓-F串", "09_nVpv_F", false),
+                  ("直流側_輸入電流-A串", "10_nIpv_A", false),
+                  ("直流側_輸入電流-B串", "11_nIpv_B", false),
+                  ("直流側_輸入電流-C串", "12_nIpv_C", false),
+                  ("直流側_輸入電流-D串", "13_nIpv_D", false),
+                  ("直流側_輸入電流-E串", "14_nIpv_E", false),
+                  ("直流側_輸入電流-F串", "15_nIpv_F", false),
+                  ("感測器_日照計", "16_nHi", false),
+                  ("感測器_溫度計", "17_nTmp", false)
+                ]
+    
+    var arraylist_SearchBar:[(title:String, para:String, check: Bool)]
+                 = [("交流側_發電功率", "00_nEa", false),
+                  ("交流側_電壓", "01_nOVol", false),
+                  ("交流側_電流", "02_nOCur", false),
+                  ("直流側_輸入功率", "03_nPpv", false),
+                  ("直流側_輸入電壓-A串", "04_nVpv_A", false),
+                  ("直流側_輸入電壓-B串", "05_nVpv_B", false),
+                  ("直流側_輸入電壓-C串", "06_nVpv_C", false),
+                  ("直流側_輸入電壓-D串", "07_nVpv_D", false),
+                  ("直流側_輸入電壓-E串", "08_nVpv_E", false),
+                  ("直流側_輸入電壓-F串", "09_nVpv_F", false),
+                  ("直流側_輸入電流-A串", "10_nIpv_A", false),
+                  ("直流側_輸入電流-B串", "11_nIpv_B", false),
+                  ("直流側_輸入電流-C串", "12_nIpv_C", false),
+                  ("直流側_輸入電流-D串", "13_nIpv_D", false),
+                  ("直流側_輸入電流-E串", "14_nIpv_E", false),
+                  ("直流側_輸入電流-F串", "15_nIpv_F", false),
+                  ("感測器_日照計", "16_nHi", false),
+                  ("感測器_溫度計", "17_nTmp", false)
+                ]
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,4 +175,37 @@ class para_VC: UIViewController, UIAdaptivePresentationControllerDelegate, UITab
         
         
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        
+        self.arraylist.removeAll()
+        for index in 0...(arraylist_SearchBar.count - 1){
+            if (arraylist_SearchBar[index].title.lowercased().contains(searchBar.text!.lowercased())){
+                
+                self.arraylist.append(arraylist_SearchBar[index])
+            }
+        }
+                 
+        if (searchBar.text!.isEmpty) {
+            self.arraylist = self.arraylist_real
+        }
+        
+        self.tableView.reloadData()
+        
+        
+        print("searchbar_click")
+        
+        
+        
+    }
+    
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        print("Search data is \(searchText)")
+    }
+    
+    
 }
