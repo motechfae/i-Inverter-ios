@@ -84,7 +84,8 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
                                     myList_sSNID.append((p).sSNID)
                                     myList_ConChk.append((p).ConChk)
                                     myList_nRS485ID.append(String((p).nRS485ID))
-                                    myList_nEa.append(String((p).nEa))
+                                    //myList_nEa.append(String((p).nEa))
+                                    myList_nEa.append(String(format: "%.1f", Double((p).nEa)))
                                     myList_dCreat_Time.append(JP_data!)
                                     //myList_sErrCode.append((p).sErrCode)
                                     if (p).sErrCode == "" {

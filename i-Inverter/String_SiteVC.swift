@@ -1039,7 +1039,8 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                             if isHaving == true {
                                                 arr.append(arr2D[row][2+idx])
                                             } else {
-                                                arr.append("nil")
+                                                //arr.append("nil")
+                                                arr.append("999999")
                                             }
                                             
                                         }
@@ -1230,19 +1231,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
             
         if paraStr.contains("nEa") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nEa" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "發電功率")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "發電功率")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(0)
@@ -1257,19 +1269,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         
         if paraStr.contains("nPpv") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nPpv" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "輸入功率")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "輸入功率")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(0)
@@ -1285,14 +1308,14 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         if paraStr.contains("nVpv_A") {
             if arr2D_F.count > 0 {
                 
-                var myList_str = [Any] ()
-                
                 for row in 0..<arr2D_F.count {
+                    
+                    var myList_str = [Any] ()
                     
                     if arr2D_F[row][1] == "nVpv_A" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
@@ -1300,8 +1323,20 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                             
                         }
                         
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_A")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_A")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1317,19 +1352,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nVpv_B") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nVpv_B" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_B")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_B")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1343,19 +1389,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nVpv_C") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nVpv_C" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_C")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_C")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1369,19 +1426,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nVpv_D") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nVpv_D" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_D")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_D")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1395,19 +1463,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nVpv_E") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nVpv_E" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_E")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_E")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1421,19 +1500,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nVpv_F") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nVpv_F" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nVpv_F")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_F")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1447,19 +1537,32 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nOVol") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nOVol" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
+                                //print("myInv_sDataKey_F is \(myInv_sDataKey_F[i])")
                                 myList_str.append("")
+                                
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nOVol")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nOVol")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(1)
@@ -1473,19 +1576,31 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nOCur") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nOCur" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
+                                //print("myInv_sDataKey_F is \(myInv_sDataKey_F[i])")
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nOCur")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nOCur")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1499,19 +1614,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_A") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_A" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_A")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_A")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1525,19 +1651,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_B") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_B" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_B")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_B")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1551,19 +1688,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_C") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_C" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_C")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_C")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1577,19 +1725,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_D") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_D" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_D")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_D")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1603,19 +1762,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_E") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_E" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_E")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_E")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)
@@ -1629,19 +1799,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         if paraStr.contains("nIpv_F") {
             if arr2D_F.count > 0 {
-                var myList_str = [Any] ()
                 for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
                     if arr2D_F[row][1] == "nIpv_F" {
                         for i in 0..<myInv_sDataKey_F.count {
                             var db:Double = Double(arr2D_F[row][2+i])!
-                            if db == 0 {
+                            if db == 999999 {
                                 myList_str.append("")
                             } else {
                                 myList_str.append(db)
                             }
                         }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
                         aaChartModel.series?.append(AASeriesElement()
-                                                        .name(arr2D_F[row][0] + "-" + "nIpv_F")
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_F")
                                                         .type(AAChartType.spline)
                                                         .data(myList_str)
                                                         .yAxis(2)

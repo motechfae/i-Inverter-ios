@@ -541,11 +541,14 @@ class Chart_SiteVC: UIViewController {
                                     JP_data = _P
                                     
                                     JP_nEa = String((p).nEa)
-                                    JP_nHi = String((p).nHi)
-                                    JP_nTmp = String((p).nTmp)
+                                    //JP_nHi = String((p).nHi)
+                                    JP_nHi = String(format: "%.1f", Double((p).nHi))
+                                    //JP_nTmp = String((p).nTmp)
+                                    JP_nTmp = String(format: "%.1f", Double((p).nTmp))
                                     JP_nTEa = String((p).nTEa)
                                     JP_nEaMax = String((p).nEaMax)
                             
+                                    
                                     
                                 } else {
                                     JP_data = ""
@@ -566,6 +569,9 @@ class Chart_SiteVC: UIViewController {
                                 let textLabel = UILabel(frame: CGRect(x: 0, y: 140, width: 180, height: 100))
                                 //textLabel.text = "今日累積:32.41kWh" + "\n" + "今日最高:32.89kw" + "\n" + "及時發電功率:7.93kw" + "\n" + "實體日照:42.0W/m2" + "\n" + "模組溫度:18.0°C"
                                 textLabel.text = "今日累積:\(JP_nTEa!)kWh" + "\n" + "今日最高:\(JP_nEaMax!)kw" + "\n" + "及時發電功率:\(JP_nEa!)kw" + "\n" + "實體日照:\(JP_nHi!)W/m2" + "\n" + "模組溫度:\(JP_nTmp!)°C"
+                                
+                                
+                                
                                 textLabel.textColor = UIColor.gray
                                 textLabel.font = UIFont(name: "Helvetica-Light", size: 16)
                                 textLabel.textAlignment = NSTextAlignment.left
