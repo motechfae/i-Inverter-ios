@@ -14,6 +14,7 @@ var str_nothing: String = ""
 var isGetPara: Bool = false
 
 var myInvList_sSNID = [String]()
+var myInvList_nRS485ID = [String]()
 
 var set_Inv = Set<String>()
 var set_Para = Set<String>()
@@ -48,6 +49,7 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         
         
         myInvList_sSNID.removeAll()
+        myInvList_nRS485ID.removeAll()
         var JP_data: String?
         DispatchQueue.global().async{ [self] in
             JP_data = ""
@@ -84,6 +86,7 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                     
                                     
                                     myInvList_sSNID.append(JP_data!)
+                                    myInvList_nRS485ID.append(String((p).nRS485ID))
                                     
                                     
                                     
@@ -95,6 +98,7 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                             DispatchQueue.main.async{
                                 //print("The JP_data is \(JP_data!)")
                                 //print("The JP_data is \(myInvList_sSNID)")
+                                //print("The JP_data is \(myInvList_nRS485ID)")
                                 
                                 
                                 

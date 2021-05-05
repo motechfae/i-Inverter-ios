@@ -19,23 +19,23 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
     
     var set_Inv_temp = Set<String>()
     
-    var arraylist:[(title:String, index_title:String, check: Bool)]
-                 = [("aa", "00_aa", false),
-                  ("bb", "01_bb", false),
-                  ("cc", "02_cc", false)
+    var arraylist:[(title:String, index_title:String, show_title:String, check: Bool)]
+                 = [("aa", "00_aa", "aa:1", false),
+                  ("bb", "01_bb", "bb:2", false),
+                  ("cc", "02_cc", "cc:3",false)
                 ]
     
-    var arraylist_real:[(title:String, index_title:String, check: Bool)]
-                 = [("aa", "00_aa", false),
-                  ("bb", "01_bb", false),
-                  ("cc", "02_cc", false)
-                ]
+    var arraylist_real:[(title:String, index_title:String, show_title:String, check: Bool)]
+                    = [("aa", "00_aa", "aa:1", false),
+                     ("bb", "01_bb", "bb:2", false),
+                     ("cc", "02_cc", "cc:3",false)
+                   ]
     
-    var arraylist_SearchBar:[(title:String, index_title:String, check: Bool)]
-                 = [("aa", "00_aa", false),
-                  ("bb", "01_bb", false),
-                  ("cc", "02_cc", false)
-                ]
+    var arraylist_SearchBar:[(title:String, index_title:String, show_title:String, check: Bool)]
+                    = [("aa", "00_aa", "aa:1", false),
+                     ("bb", "01_bb", "bb:2", false),
+                     ("cc", "02_cc", "cc:3",false)
+                   ]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -60,9 +60,15 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
         for i in myInvList_sSNID {
             //arraylist.append((i, false))
             
+            /*
             arraylist.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
             arraylist_real.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
             arraylist_SearchBar.append((i, String(format: "%02d", temp_Int) + "_" + i, false))
+            */
+            
+            arraylist.append((i, String(format: "%02d", temp_Int) + "_" + i, i + ":" + myInvList_nRS485ID[temp_Int], false))
+            arraylist_real.append((i, String(format: "%02d", temp_Int) + "_" + i, i + ":" + myInvList_nRS485ID[temp_Int], false))
+            arraylist_SearchBar.append((i, String(format: "%02d", temp_Int) + "_" + i, i + ":" + myInvList_nRS485ID[temp_Int], false))
             temp_Int = temp_Int + 1
         }
         
@@ -109,7 +115,8 @@ class inv_VC: UIViewController,UIAdaptivePresentationControllerDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! inv_TableViewCell
         
-        cell.textLabel?.text = arraylist[indexPath.row].title
+        //cell.textLabel?.text = arraylist[indexPath.row].title
+        cell.textLabel?.text = arraylist[indexPath.row].show_title
         cell.inv_check.isOn = arraylist[indexPath.row].check
         cell.inv_check.tag = indexPath.row
         
