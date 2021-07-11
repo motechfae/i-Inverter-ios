@@ -314,7 +314,7 @@ class LoginVC: UIViewController {
                 }
                 */
                 
-                DispatchQueue.global().async{
+                DispatchQueue.global().async{   //login password 不區分大小寫
                 
                     JP = ""
                     let url = URL(string: "https://i-inverter.motech.com.tw/vUserApisvr/api/values")
