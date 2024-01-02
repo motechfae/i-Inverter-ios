@@ -1,9 +1,6 @@
 //
-//  AATitle.swift
-//  AAInfographicsDemo
-//
-//  Created by AnAn on 2019/8/31.
-//  Copyright © 2019 An An. All rights reserved.
+// Created by AnAn on 2022/11/25.
+// Copyright (c) 2022 An An. All rights reserved.
 //*************** ...... SOURCE CODE ...... ***************
 //***...................................................***
 //*** https://github.com/AAChartModel/AAChartKit        ***
@@ -32,61 +29,74 @@
 
 import Foundation
 
-public class AATitle: AAObject {
-    public var text: String?
-    public var style: AAStyle?
-    public var align: String?
-    public var verticalAlign: String?
-    public var x: Float?
-    public var y: Float?
-    public var userHTML: Bool?
-    public var floating: Bool?
+public class AAPie: AASeries {
+    public var type: String?
+    public var data: [Any]?
+    public var size: Float?
+    public var cursor: String?
+    public var showInLegend: Bool?
+    public var startAngle: Float?
+    public var endAngle: Float?
+    public var depth: Float?
+    public var center: [Any]?
     
     @discardableResult
-    public func text(_ prop: String?) -> AATitle {
-        text = prop
+    public func type(_ prop: AAChartType) -> AAPie {
+        type = prop.rawValue
         return self
     }
     
     @discardableResult
-    public func style(_ prop: AAStyle?) -> AATitle {
-        style = prop
+    public func data(_ prop: [Any]) -> AAPie {
+        data = prop
         return self
     }
     
     @discardableResult
-    public func align(_ prop: AAChartAlignType?) -> AATitle {
-        align = prop?.rawValue
+    public func size(_ prop: Float?) -> AAPie {
+        size = prop
         return self
     }
     
     @discardableResult
-    public func verticalAlign(_ prop: AAChartVerticalAlignType?) -> AATitle {
-        verticalAlign = prop?.rawValue
+    public func cursor(_ prop: String) -> AAPie {
+        cursor = prop
         return self
     }
     
     @discardableResult
-    public func x(_ prop: Float?) -> AATitle {
-        x = prop
+    public func showInLegend(_ prop: Bool?) -> AAPie {
+        showInLegend = prop
         return self
     }
     
     @discardableResult
-    public func y(_ prop: Float?) -> AATitle {
-        y = prop
+    public func startAngle(_ prop: Float?) -> AAPie {
+        startAngle = prop
         return self
     }
     
     @discardableResult
-    public func userHTML(_ prop: Bool?) -> AATitle {
-        userHTML = prop
+    public func endAngle(_ prop: Float?) -> AAPie {
+        endAngle = prop
         return self
     }
-
+    
     @discardableResult
-    public func floating(_ prop: Bool?) -> AATitle {
-        floating = prop
+    public func depth(_ prop: Float?) -> AAPie {
+        depth = prop
+        return self
+    }
+    
+    @discardableResult
+    public func center(_ prop: [Int]?) -> AAPie {
+        center = prop
+        return self
+    }
+    
+    @discardableResult
+    public func center(_ prop: [String]?) -> AAPie {
+        center = prop
         return self
     }
     
