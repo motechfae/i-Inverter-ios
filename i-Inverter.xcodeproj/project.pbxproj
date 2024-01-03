@@ -623,6 +623,8 @@
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "i-Inverter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +647,8 @@
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "i-Inverter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
