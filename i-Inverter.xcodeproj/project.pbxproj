@@ -50,6 +50,7 @@
 		3CE3671725EF6DF300985C76 /* apple-icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE3671525EF6DF200985C76 /* apple-icon-152x152.png */; };
 		3CE79EFA2626CC8A00AA4A50 /* Chart_SiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE79EF92626CC8A00AA4A50 /* Chart_SiteVC.swift */; };
 		72CF3B6461103A49DF2D9A79 /* Pods_i_Inverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA132789978C1760E5D86FC /* Pods_i_Inverter.framework */; };
+		C2A523912B4D464200286E38 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = C2A523902B4D464200286E38 /* ci_post_clone.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		3CE79EF92626CC8A00AA4A50 /* Chart_SiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart_SiteVC.swift; sourceTree = "<group>"; };
 		908AB4E5891BF167E7F99273 /* Pods-i-Inverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Inverter.debug.xcconfig"; path = "Target Support Files/Pods-i-Inverter/Pods-i-Inverter.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFED14341850FB6C324E41F /* Pods-i-Inverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Inverter.release.xcconfig"; path = "Target Support Files/Pods-i-Inverter/Pods-i-Inverter.release.xcconfig"; sourceTree = "<group>"; };
+		C2A523902B4D464200286E38 /* ci_post_clone.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		CAA132789978C1760E5D86FC /* Pods_i_Inverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i_Inverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 		3CBA339F25DF97F20087B92F = {
 			isa = PBXGroup;
 			children = (
+				C2A5238F2B4D464200286E38 /* ci_scripts */,
 				3C4C4E082630026200C33143 /* analytics_16.png */,
 				3C4C4E072630026200C33143 /* analytics2_16.png */,
 				3C4C4E062630026200C33143 /* cells_16.png */,
@@ -199,6 +202,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C2A5238F2B4D464200286E38 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C2A523902B4D464200286E38 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +274,7 @@
 				3CB977E5262FDA600084123C /* disconnect.png in Resources */,
 				3C6336872602D688003B8AD2 /* hiAlertNew.png in Resources */,
 				3C4C4DFC262FFB6B00C33143 /* cells.png in Resources */,
+				C2A523912B4D464200286E38 /* ci_post_clone.sh in Resources */,
 				3C4C4E092630026300C33143 /* cells_16.png in Resources */,
 				3C4C4DFA262FFB6B00C33143 /* analytics2.png in Resources */,
 				3C6336882602D688003B8AD2 /* hiGoodNew.png in Resources */,
