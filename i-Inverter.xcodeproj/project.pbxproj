@@ -49,44 +49,7 @@
 		3CE3671625EF6DF300985C76 /* apple-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE3671425EF6DF200985C76 /* apple-icon-180x180.png */; };
 		3CE3671725EF6DF300985C76 /* apple-icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CE3671525EF6DF200985C76 /* apple-icon-152x152.png */; };
 		3CE79EFA2626CC8A00AA4A50 /* Chart_SiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE79EF92626CC8A00AA4A50 /* Chart_SiteVC.swift */; };
-		C21993222B3EA3A6001C182A /* AAChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FA2B3EA3A6001C182A /* AAChartView.swift */; };
-		C21993232B3EA3A6001C182A /* AAChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FB2B3EA3A6001C182A /* AAChartModel.swift */; };
-		C21993242B3EA3A6001C182A /* AAOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FC2B3EA3A6001C182A /* AAOptions.swift */; };
-		C21993252B3EA3A6001C182A /* AASerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FD2B3EA3A6001C182A /* AASerializable.swift */; };
-		C21993262B3EA3A6001C182A /* AASeriesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FE2B3EA3A6001C182A /* AASeriesElement.swift */; };
-		C21993272B3EA3A6001C182A /* ProjectBundlePathLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21992FF2B3EA3A6001C182A /* ProjectBundlePathLoader.swift */; };
-		C21993282B3EA3A6001C182A /* AAJSFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C21993002B3EA3A6001C182A /* AAJSFiles.bundle */; };
-		C21993292B3EA3A6001C182A /* AAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993022B3EA3A6001C182A /* AAColor.swift */; };
-		C219932A2B3EA3A6001C182A /* AAGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993032B3EA3A6001C182A /* AAGradientColor.swift */; };
-		C219932B2B3EA3A6001C182A /* AAExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993042B3EA3A6001C182A /* AAExtension.swift */; };
-		C219932C2B3EA3A6001C182A /* AASubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993062B3EA3A6001C182A /* AASubtitle.swift */; };
-		C219932D2B3EA3A6001C182A /* AAPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993072B3EA3A6001C182A /* AAPie.swift */; };
-		C219932E2B3EA3A6001C182A /* AAStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993082B3EA3A6001C182A /* AAStates.swift */; };
-		C219932F2B3EA3A6001C182A /* AABoxplot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993092B3EA3A6001C182A /* AABoxplot.swift */; };
-		C21993302B3EA3A6001C182A /* AALang.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930A2B3EA3A6001C182A /* AALang.swift */; };
-		C21993312B3EA3A6001C182A /* AALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930B2B3EA3A6001C182A /* AALabel.swift */; };
-		C21993322B3EA3A6001C182A /* AALabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930C2B3EA3A6001C182A /* AALabels.swift */; };
-		C21993332B3EA3A6001C182A /* AAColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930D2B3EA3A6001C182A /* AAColumn.swift */; };
-		C21993342B3EA3A6001C182A /* AAMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930E2B3EA3A6001C182A /* AAMarker.swift */; };
-		C21993352B3EA3A6001C182A /* AAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219930F2B3EA3A6001C182A /* AAAnimation.swift */; };
-		C21993362B3EA3A6001C182A /* AAPlotOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993102B3EA3A6001C182A /* AAPlotOptions.swift */; };
-		C21993372B3EA3A6001C182A /* AAScatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993112B3EA3A6001C182A /* AAScatter.swift */; };
-		C21993382B3EA3A6001C182A /* AAPlotLinesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993122B3EA3A6001C182A /* AAPlotLinesElement.swift */; };
-		C21993392B3EA3A6001C182A /* AAScrollablePlotArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993132B3EA3A6001C182A /* AAScrollablePlotArea.swift */; };
-		C219933A2B3EA3A6001C182A /* AALegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993142B3EA3A6001C182A /* AALegend.swift */; };
-		C219933B2B3EA3A6001C182A /* AAPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993152B3EA3A6001C182A /* AAPane.swift */; };
-		C219933C2B3EA3A6001C182A /* AAStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993162B3EA3A6001C182A /* AAStyle.swift */; };
-		C219933D2B3EA3A6001C182A /* AADataLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993172B3EA3A6001C182A /* AADataLabels.swift */; };
-		C219933E2B3EA3A6001C182A /* AAChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993182B3EA3A6001C182A /* AAChart.swift */; };
-		C219933F2B3EA3A6001C182A /* AATitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993192B3EA3A6001C182A /* AATitle.swift */; };
-		C21993402B3EA3A6001C182A /* AAYAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931A2B3EA3A6001C182A /* AAYAxis.swift */; };
-		C21993412B3EA3A6001C182A /* AACredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931B2B3EA3A6001C182A /* AACredits.swift */; };
-		C21993422B3EA3A6001C182A /* AATooltip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931C2B3EA3A6001C182A /* AATooltip.swift */; };
-		C21993432B3EA3A6001C182A /* AAPlotBandsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931D2B3EA3A6001C182A /* AAPlotBandsElement.swift */; };
-		C21993442B3EA3A6001C182A /* AASeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931E2B3EA3A6001C182A /* AASeries.swift */; };
-		C21993452B3EA3A6001C182A /* AAXAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219931F2B3EA3A6001C182A /* AAXAxis.swift */; };
-		C21993462B3EA3A6001C182A /* AACrosshair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993202B3EA3A6001C182A /* AACrosshair.swift */; };
-		C21993472B3EA3A6001C182A /* AAAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21993212B3EA3A6001C182A /* AAAxis.swift */; };
+		72CF3B6461103A49DF2D9A79 /* Pods_i_Inverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA132789978C1760E5D86FC /* Pods_i_Inverter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,44 +97,9 @@
 		3CE3671425EF6DF200985C76 /* apple-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-180x180.png"; sourceTree = "<group>"; };
 		3CE3671525EF6DF200985C76 /* apple-icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-152x152.png"; sourceTree = "<group>"; };
 		3CE79EF92626CC8A00AA4A50 /* Chart_SiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart_SiteVC.swift; sourceTree = "<group>"; };
-		C21992FA2B3EA3A6001C182A /* AAChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAChartView.swift; sourceTree = "<group>"; };
-		C21992FB2B3EA3A6001C182A /* AAChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAChartModel.swift; sourceTree = "<group>"; };
-		C21992FC2B3EA3A6001C182A /* AAOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAOptions.swift; sourceTree = "<group>"; };
-		C21992FD2B3EA3A6001C182A /* AASerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASerializable.swift; sourceTree = "<group>"; };
-		C21992FE2B3EA3A6001C182A /* AASeriesElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASeriesElement.swift; sourceTree = "<group>"; };
-		C21992FF2B3EA3A6001C182A /* ProjectBundlePathLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectBundlePathLoader.swift; sourceTree = "<group>"; };
-		C21993002B3EA3A6001C182A /* AAJSFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AAJSFiles.bundle; sourceTree = "<group>"; };
-		C21993022B3EA3A6001C182A /* AAColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAColor.swift; sourceTree = "<group>"; };
-		C21993032B3EA3A6001C182A /* AAGradientColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAGradientColor.swift; sourceTree = "<group>"; };
-		C21993042B3EA3A6001C182A /* AAExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAExtension.swift; sourceTree = "<group>"; };
-		C21993062B3EA3A6001C182A /* AASubtitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASubtitle.swift; sourceTree = "<group>"; };
-		C21993072B3EA3A6001C182A /* AAPie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPie.swift; sourceTree = "<group>"; };
-		C21993082B3EA3A6001C182A /* AAStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAStates.swift; sourceTree = "<group>"; };
-		C21993092B3EA3A6001C182A /* AABoxplot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AABoxplot.swift; sourceTree = "<group>"; };
-		C219930A2B3EA3A6001C182A /* AALang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AALang.swift; sourceTree = "<group>"; };
-		C219930B2B3EA3A6001C182A /* AALabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AALabel.swift; sourceTree = "<group>"; };
-		C219930C2B3EA3A6001C182A /* AALabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AALabels.swift; sourceTree = "<group>"; };
-		C219930D2B3EA3A6001C182A /* AAColumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAColumn.swift; sourceTree = "<group>"; };
-		C219930E2B3EA3A6001C182A /* AAMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAMarker.swift; sourceTree = "<group>"; };
-		C219930F2B3EA3A6001C182A /* AAAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAAnimation.swift; sourceTree = "<group>"; };
-		C21993102B3EA3A6001C182A /* AAPlotOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlotOptions.swift; sourceTree = "<group>"; };
-		C21993112B3EA3A6001C182A /* AAScatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAScatter.swift; sourceTree = "<group>"; };
-		C21993122B3EA3A6001C182A /* AAPlotLinesElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlotLinesElement.swift; sourceTree = "<group>"; };
-		C21993132B3EA3A6001C182A /* AAScrollablePlotArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAScrollablePlotArea.swift; sourceTree = "<group>"; };
-		C21993142B3EA3A6001C182A /* AALegend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AALegend.swift; sourceTree = "<group>"; };
-		C21993152B3EA3A6001C182A /* AAPane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPane.swift; sourceTree = "<group>"; };
-		C21993162B3EA3A6001C182A /* AAStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAStyle.swift; sourceTree = "<group>"; };
-		C21993172B3EA3A6001C182A /* AADataLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AADataLabels.swift; sourceTree = "<group>"; };
-		C21993182B3EA3A6001C182A /* AAChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAChart.swift; sourceTree = "<group>"; };
-		C21993192B3EA3A6001C182A /* AATitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AATitle.swift; sourceTree = "<group>"; };
-		C219931A2B3EA3A6001C182A /* AAYAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAYAxis.swift; sourceTree = "<group>"; };
-		C219931B2B3EA3A6001C182A /* AACredits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACredits.swift; sourceTree = "<group>"; };
-		C219931C2B3EA3A6001C182A /* AATooltip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AATooltip.swift; sourceTree = "<group>"; };
-		C219931D2B3EA3A6001C182A /* AAPlotBandsElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlotBandsElement.swift; sourceTree = "<group>"; };
-		C219931E2B3EA3A6001C182A /* AASeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASeries.swift; sourceTree = "<group>"; };
-		C219931F2B3EA3A6001C182A /* AAXAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAXAxis.swift; sourceTree = "<group>"; };
-		C21993202B3EA3A6001C182A /* AACrosshair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACrosshair.swift; sourceTree = "<group>"; };
-		C21993212B3EA3A6001C182A /* AAAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAAxis.swift; sourceTree = "<group>"; };
+		908AB4E5891BF167E7F99273 /* Pods-i-Inverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Inverter.debug.xcconfig"; path = "Target Support Files/Pods-i-Inverter/Pods-i-Inverter.debug.xcconfig"; sourceTree = "<group>"; };
+		BDFED14341850FB6C324E41F /* Pods-i-Inverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Inverter.release.xcconfig"; path = "Target Support Files/Pods-i-Inverter/Pods-i-Inverter.release.xcconfig"; sourceTree = "<group>"; };
+		CAA132789978C1760E5D86FC /* Pods_i_Inverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i_Inverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,16 +107,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CF3B6461103A49DF2D9A79 /* Pods_i_Inverter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C8B7F098BE598E123E09B10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				908AB4E5891BF167E7F99273 /* Pods-i-Inverter.debug.xcconfig */,
+				BDFED14341850FB6C324E41F /* Pods-i-Inverter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3CBA339F25DF97F20087B92F = {
 			isa = PBXGroup;
 			children = (
-				C21992F82B3EA3A6001C182A /* AAInfographics */,
 				3C4C4E082630026200C33143 /* analytics_16.png */,
 				3C4C4E072630026200C33143 /* analytics2_16.png */,
 				3C4C4E062630026200C33143 /* cells_16.png */,
@@ -214,6 +151,8 @@
 				3CE3671425EF6DF200985C76 /* apple-icon-180x180.png */,
 				3CBA33AA25DF97F20087B92F /* i-Inverter */,
 				3CBA33A925DF97F20087B92F /* Products */,
+				0C8B7F098BE598E123E09B10 /* Pods */,
+				9C0E14A3C603A8F06F424A81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,73 +191,12 @@
 			path = "i-Inverter";
 			sourceTree = "<group>";
 		};
-		C21992F82B3EA3A6001C182A /* AAInfographics */ = {
+		9C0E14A3C603A8F06F424A81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C21992F92B3EA3A6001C182A /* AAChartCreator */,
-				C21992FF2B3EA3A6001C182A /* ProjectBundlePathLoader.swift */,
-				C21993002B3EA3A6001C182A /* AAJSFiles.bundle */,
-				C21993012B3EA3A6001C182A /* AATool */,
-				C21993052B3EA3A6001C182A /* AAOptionsModel */,
+				CAA132789978C1760E5D86FC /* Pods_i_Inverter.framework */,
 			);
-			path = AAInfographics;
-			sourceTree = "<group>";
-		};
-		C21992F92B3EA3A6001C182A /* AAChartCreator */ = {
-			isa = PBXGroup;
-			children = (
-				C21992FA2B3EA3A6001C182A /* AAChartView.swift */,
-				C21992FB2B3EA3A6001C182A /* AAChartModel.swift */,
-				C21992FC2B3EA3A6001C182A /* AAOptions.swift */,
-				C21992FD2B3EA3A6001C182A /* AASerializable.swift */,
-				C21992FE2B3EA3A6001C182A /* AASeriesElement.swift */,
-			);
-			path = AAChartCreator;
-			sourceTree = "<group>";
-		};
-		C21993012B3EA3A6001C182A /* AATool */ = {
-			isa = PBXGroup;
-			children = (
-				C21993022B3EA3A6001C182A /* AAColor.swift */,
-				C21993032B3EA3A6001C182A /* AAGradientColor.swift */,
-				C21993042B3EA3A6001C182A /* AAExtension.swift */,
-			);
-			path = AATool;
-			sourceTree = "<group>";
-		};
-		C21993052B3EA3A6001C182A /* AAOptionsModel */ = {
-			isa = PBXGroup;
-			children = (
-				C21993062B3EA3A6001C182A /* AASubtitle.swift */,
-				C21993072B3EA3A6001C182A /* AAPie.swift */,
-				C21993082B3EA3A6001C182A /* AAStates.swift */,
-				C21993092B3EA3A6001C182A /* AABoxplot.swift */,
-				C219930A2B3EA3A6001C182A /* AALang.swift */,
-				C219930B2B3EA3A6001C182A /* AALabel.swift */,
-				C219930C2B3EA3A6001C182A /* AALabels.swift */,
-				C219930D2B3EA3A6001C182A /* AAColumn.swift */,
-				C219930E2B3EA3A6001C182A /* AAMarker.swift */,
-				C219930F2B3EA3A6001C182A /* AAAnimation.swift */,
-				C21993102B3EA3A6001C182A /* AAPlotOptions.swift */,
-				C21993112B3EA3A6001C182A /* AAScatter.swift */,
-				C21993122B3EA3A6001C182A /* AAPlotLinesElement.swift */,
-				C21993132B3EA3A6001C182A /* AAScrollablePlotArea.swift */,
-				C21993142B3EA3A6001C182A /* AALegend.swift */,
-				C21993152B3EA3A6001C182A /* AAPane.swift */,
-				C21993162B3EA3A6001C182A /* AAStyle.swift */,
-				C21993172B3EA3A6001C182A /* AADataLabels.swift */,
-				C21993182B3EA3A6001C182A /* AAChart.swift */,
-				C21993192B3EA3A6001C182A /* AATitle.swift */,
-				C219931A2B3EA3A6001C182A /* AAYAxis.swift */,
-				C219931B2B3EA3A6001C182A /* AACredits.swift */,
-				C219931C2B3EA3A6001C182A /* AATooltip.swift */,
-				C219931D2B3EA3A6001C182A /* AAPlotBandsElement.swift */,
-				C219931E2B3EA3A6001C182A /* AASeries.swift */,
-				C219931F2B3EA3A6001C182A /* AAXAxis.swift */,
-				C21993202B3EA3A6001C182A /* AACrosshair.swift */,
-				C21993212B3EA3A6001C182A /* AAAxis.swift */,
-			);
-			path = AAOptionsModel;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CBA33BC25DF97F70087B92F /* Build configuration list for PBXNativeTarget "i-Inverter" */;
 			buildPhases = (
+				C3AB9B658EDA65C1C5E14F34 /* [CP] Check Pods Manifest.lock */,
 				3CBA33A425DF97F20087B92F /* Sources */,
 				3CBA33A525DF97F20087B92F /* Frameworks */,
 				3CBA33A625DF97F20087B92F /* Resources */,
+				AF976475AF4B7CDBB3F0863B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,7 +272,6 @@
 				3C63368E2602D688003B8AD2 /* hiAlert.png in Resources */,
 				3C4C4E03263001B100C33143 /* cells_32.png in Resources */,
 				3C63368C2602D688003B8AD2 /* hiSleep.PNG in Resources */,
-				C21993282B3EA3A6001C182A /* AAJSFiles.bundle in Resources */,
 				3CBA33B825DF97F70087B92F /* LaunchScreen.storyboard in Resources */,
 				3CB977E4262FDA600084123C /* connect.png in Resources */,
 				3C4C4E0B2630026300C33143 /* analytics_16.png in Resources */,
@@ -411,64 +290,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF976475AF4B7CDBB3F0863B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-i-Inverter/Pods-i-Inverter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-i-Inverter/Pods-i-Inverter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-i-Inverter/Pods-i-Inverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3AB9B658EDA65C1C5E14F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-i-Inverter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CBA33A425DF97F20087B92F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21993452B3EA3A6001C182A /* AAXAxis.swift in Sources */,
-				C21993392B3EA3A6001C182A /* AAScrollablePlotArea.swift in Sources */,
-				C21993232B3EA3A6001C182A /* AAChartModel.swift in Sources */,
-				C21993312B3EA3A6001C182A /* AALabel.swift in Sources */,
-				C21993412B3EA3A6001C182A /* AACredits.swift in Sources */,
 				3CBA33B025DF97F20087B92F /* LoginVC.swift in Sources */,
 				3CB977E0262FC2E10084123C /* ErrorCode_SiteVC.swift in Sources */,
-				C21993302B3EA3A6001C182A /* AALang.swift in Sources */,
-				C21993422B3EA3A6001C182A /* AATooltip.swift in Sources */,
 				3CBA33AC25DF97F20087B92F /* AppDelegate.swift in Sources */,
 				3C274A4A26316D42000B943C /* date_Picker.swift in Sources */,
-				C21993362B3EA3A6001C182A /* AAPlotOptions.swift in Sources */,
 				3CE79EFA2626CC8A00AA4A50 /* Chart_SiteVC.swift in Sources */,
 				3C570EC2263314230046C420 /* inv_VC.swift in Sources */,
 				3CBA33AE25DF97F20087B92F /* SceneDelegate.swift in Sources */,
-				C21993252B3EA3A6001C182A /* AASerializable.swift in Sources */,
-				C21993262B3EA3A6001C182A /* AASeriesElement.swift in Sources */,
 				3C502C7A2601D8CE0013CF2D /* CollectionViewController_1.swift in Sources */,
 				3CBFEBEB26311903008692A6 /* String_SiteVC.swift in Sources */,
 				3CC6C5E82609DEB3008457F6 /* CollectionViewController_2.swift in Sources */,
 				3C94A32D2632ACA700C8CA82 /* para_VC.swift in Sources */,
-				C219933F2B3EA3A6001C182A /* AATitle.swift in Sources */,
-				C219932F2B3EA3A6001C182A /* AABoxplot.swift in Sources */,
-				C21993442B3EA3A6001C182A /* AASeries.swift in Sources */,
-				C21993472B3EA3A6001C182A /* AAAxis.swift in Sources */,
-				C21993332B3EA3A6001C182A /* AAColumn.swift in Sources */,
-				C21993242B3EA3A6001C182A /* AAOptions.swift in Sources */,
-				C219933C2B3EA3A6001C182A /* AAStyle.swift in Sources */,
-				C219932B2B3EA3A6001C182A /* AAExtension.swift in Sources */,
-				C219932A2B3EA3A6001C182A /* AAGradientColor.swift in Sources */,
-				C21993292B3EA3A6001C182A /* AAColor.swift in Sources */,
 				3C570EC526331A8A0046C420 /* inv_TableViewCell.swift in Sources */,
-				C21993372B3EA3A6001C182A /* AAScatter.swift in Sources */,
-				C21993402B3EA3A6001C182A /* AAYAxis.swift in Sources */,
-				C21993352B3EA3A6001C182A /* AAAnimation.swift in Sources */,
 				3C9D5BB325FB464E0088D26C /* mainTabVC.swift in Sources */,
-				C219933D2B3EA3A6001C182A /* AADataLabels.swift in Sources */,
-				C21993272B3EA3A6001C182A /* ProjectBundlePathLoader.swift in Sources */,
 				3CC6C5EB2609E666008457F6 /* CollectionViewController_3.swift in Sources */,
-				C21993432B3EA3A6001C182A /* AAPlotBandsElement.swift in Sources */,
 				3C4C2DA926283E0400570B96 /* chartTabVC.swift in Sources */,
-				C21993342B3EA3A6001C182A /* AAMarker.swift in Sources */,
 				3C94A3302632B8C200C8CA82 /* para_TableViewCell.swift in Sources */,
-				C21993222B3EA3A6001C182A /* AAChartView.swift in Sources */,
-				C219933A2B3EA3A6001C182A /* AALegend.swift in Sources */,
-				C21993462B3EA3A6001C182A /* AACrosshair.swift in Sources */,
-				C219932C2B3EA3A6001C182A /* AASubtitle.swift in Sources */,
-				C219933B2B3EA3A6001C182A /* AAPane.swift in Sources */,
-				C219932D2B3EA3A6001C182A /* AAPie.swift in Sources */,
-				C219933E2B3EA3A6001C182A /* AAChart.swift in Sources */,
-				C21993382B3EA3A6001C182A /* AAPlotLinesElement.swift in Sources */,
-				C21993322B3EA3A6001C182A /* AALabels.swift in Sources */,
-				C219932E2B3EA3A6001C182A /* AAStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -594,7 +478,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -616,11 +500,12 @@
 		};
 		3CBA33BD25DF97F70087B92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908AB4E5891BF167E7F99273 /* Pods-i-Inverter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "i-Inverter";
@@ -630,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.motech.iInverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -640,11 +525,12 @@
 		};
 		3CBA33BE25DF97F70087B92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFED14341850FB6C324E41F /* Pods-i-Inverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 5Y63KT6R9V;
 				INFOPLIST_FILE = "i-Inverter/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "i-Inverter";
@@ -654,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.motech.iInverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

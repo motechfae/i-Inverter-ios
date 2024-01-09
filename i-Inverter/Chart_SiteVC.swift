@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AAInfographics
 
 class Chart_SiteVC: UIViewController {
 
