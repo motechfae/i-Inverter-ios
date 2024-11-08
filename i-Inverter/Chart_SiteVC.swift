@@ -273,13 +273,13 @@ class Chart_SiteVC: UIViewController {
         var sDataKey: String
         var nEa: Double
         var nHi: Int
-        var nTmp: Int
+        var nTmp: Double
     }
     
     var myList_sDataKey = [String]()
     var myList_nEa = [Double]()
     var myList_nHi = [Int]()
-    var myList_nTmp = [Int]()
+    var myList_nTmp = [Double]()
     
     
     func showAAChart() -> Bool {
@@ -496,7 +496,7 @@ class Chart_SiteVC: UIViewController {
         var sDataKey: String
         var nEa: Double
         var nHi: Int
-        var nTmp: Int
+        var nTmp: Double
         var nTEa: Double
         var nEaMax: Double
     }

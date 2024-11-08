@@ -460,12 +460,24 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         var nVpv_D: Double?
         var nVpv_E: Double?
         var nVpv_F: Double?
+        var nVpv_G: Double?
+        var nVpv_H: Double?
+        var nVpv_I: Double?
+        var nVpv_J: Double?
+        var nVpv_K: Double?
+        var nVpv_L: Double?
         var nIpv_A: Double?
         var nIpv_B: Double?
         var nIpv_C: Double?
         var nIpv_D: Double?
         var nIpv_E: Double?
         var nIpv_F: Double?
+        var nIpv_G: Double?
+        var nIpv_H: Double?
+        var nIpv_I: Double?
+        var nIpv_J: Double?
+        var nIpv_K: Double?
+        var nIpv_L: Double?
     }
     
     var myInv_sDataKey_sSNID = [String]()
@@ -485,12 +497,24 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
     var myInv_nVpv_D = [String]()
     var myInv_nVpv_E = [String]()
     var myInv_nVpv_F = [String]()
+    var myInv_nVpv_G = [String]()
+    var myInv_nVpv_H = [String]()
+    var myInv_nVpv_I = [String]()
+    var myInv_nVpv_J = [String]()
+    var myInv_nVpv_K = [String]()
+    var myInv_nVpv_L = [String]()
     var myInv_nIpv_A = [String]()
     var myInv_nIpv_B = [String]()
     var myInv_nIpv_C = [String]()
     var myInv_nIpv_D = [String]()
     var myInv_nIpv_E = [String]()
     var myInv_nIpv_F = [String]()
+    var myInv_nIpv_G = [String]()
+    var myInv_nIpv_H = [String]()
+    var myInv_nIpv_I = [String]()
+    var myInv_nIpv_J = [String]()
+    var myInv_nIpv_K = [String]()
+    var myInv_nIpv_L = [String]()
     
     var myInv_nPara = [String]()
     
@@ -504,12 +528,24 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
     var sSNID_nVpv_D = [String]()
     var sSNID_nVpv_E = [String]()
     var sSNID_nVpv_F = [String]()
+    var sSNID_nVpv_G = [String]()
+    var sSNID_nVpv_H = [String]()
+    var sSNID_nVpv_I = [String]()
+    var sSNID_nVpv_J = [String]()
+    var sSNID_nVpv_K = [String]()
+    var sSNID_nVpv_L = [String]()
     var sSNID_nIpv_A = [String]()
     var sSNID_nIpv_B = [String]()
     var sSNID_nIpv_C = [String]()
     var sSNID_nIpv_D = [String]()
     var sSNID_nIpv_E = [String]()
     var sSNID_nIpv_F = [String]()
+    var sSNID_nIpv_G = [String]()
+    var sSNID_nIpv_H = [String]()
+    var sSNID_nIpv_I = [String]()
+    var sSNID_nIpv_J = [String]()
+    var sSNID_nIpv_K = [String]()
+    var sSNID_nIpv_L = [String]()
     
     func getInverterStringData() -> Bool {
         
@@ -530,12 +566,24 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         myInv_nVpv_D.removeAll()
         myInv_nVpv_E.removeAll()
         myInv_nVpv_F.removeAll()
+        myInv_nVpv_G.removeAll()
+        myInv_nVpv_H.removeAll()
+        myInv_nVpv_I.removeAll()
+        myInv_nVpv_J.removeAll()
+        myInv_nVpv_K.removeAll()
+        myInv_nVpv_L.removeAll()
         myInv_nIpv_A.removeAll()
         myInv_nIpv_B.removeAll()
         myInv_nIpv_C.removeAll()
         myInv_nIpv_D.removeAll()
         myInv_nIpv_E.removeAll()
         myInv_nIpv_F.removeAll()
+        myInv_nIpv_G.removeAll()
+        myInv_nIpv_H.removeAll()
+        myInv_nIpv_I.removeAll()
+        myInv_nIpv_J.removeAll()
+        myInv_nIpv_K.removeAll()
+        myInv_nIpv_L.removeAll()
         myInv_nPara.removeAll()
         
         sSNID_nEa.removeAll()
@@ -548,12 +596,24 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         sSNID_nVpv_D.removeAll()
         sSNID_nVpv_E.removeAll()
         sSNID_nVpv_F.removeAll()
+        sSNID_nVpv_G.removeAll()
+        sSNID_nVpv_H.removeAll()
+        sSNID_nVpv_I.removeAll()
+        sSNID_nVpv_J.removeAll()
+        sSNID_nVpv_K.removeAll()
+        sSNID_nVpv_L.removeAll()
         sSNID_nIpv_A.removeAll()
         sSNID_nIpv_B.removeAll()
         sSNID_nIpv_C.removeAll()
         sSNID_nIpv_D.removeAll()
         sSNID_nIpv_E.removeAll()
         sSNID_nIpv_F.removeAll()
+        sSNID_nIpv_G.removeAll()
+        sSNID_nIpv_H.removeAll()
+        sSNID_nIpv_I.removeAll()
+        sSNID_nIpv_J.removeAll()
+        sSNID_nIpv_K.removeAll()
+        sSNID_nIpv_L.removeAll()
         set_myInv_sDataKey_F.removeAll()
         var JP_data: String?
         DispatchQueue.global().async{ [self] in
@@ -640,6 +700,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                         myInv_nVpv_F.append(String((p).nVpv_F!))
                                         sSNID_nVpv_F.append((p).sSNID + "@" + String((p).nVpv_F!))
                                     }
+                                    if paraStr.contains("nVpv_G") {
+                                        myInv_nVpv_G.append(String((p).nVpv_G!))
+                                        sSNID_nVpv_G.append((p).sSNID + "@" + String((p).nVpv_G!))
+                                    }
+                                    if paraStr.contains("nVpv_H") {
+                                        myInv_nVpv_H.append(String((p).nVpv_H!))
+                                        sSNID_nVpv_H.append((p).sSNID + "@" + String((p).nVpv_H!))
+                                    }
+                                    if paraStr.contains("nVpv_I") {
+                                        myInv_nVpv_I.append(String((p).nVpv_I!))
+                                        sSNID_nVpv_I.append((p).sSNID + "@" + String((p).nVpv_I!))
+                                    }
+                                    if paraStr.contains("nVpv_J") {
+                                        myInv_nVpv_J.append(String((p).nVpv_J!))
+                                        sSNID_nVpv_J.append((p).sSNID + "@" + String((p).nVpv_J!))
+                                    }
+                                    if paraStr.contains("nVpv_K") {
+                                        myInv_nVpv_K.append(String((p).nVpv_K!))
+                                        sSNID_nVpv_K.append((p).sSNID + "@" + String((p).nVpv_K!))
+                                    }
+                                    if paraStr.contains("nVpv_L") {
+                                        myInv_nVpv_L.append(String((p).nVpv_L!))
+                                        sSNID_nVpv_L.append((p).sSNID + "@" + String((p).nVpv_L!))
+                                    }
                                     
                                     if paraStr.contains("nIpv_A") {
                                         myInv_nIpv_A.append(String((p).nIpv_A!))
@@ -664,6 +748,30 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                     if paraStr.contains("nIpv_F") {
                                         myInv_nIpv_F.append(String((p).nIpv_F!))
                                         sSNID_nIpv_F.append((p).sSNID + "@" + String((p).nIpv_F!))
+                                    }
+                                    if paraStr.contains("nIpv_G") {
+                                        myInv_nIpv_G.append(String((p).nIpv_G!))
+                                        sSNID_nIpv_G.append((p).sSNID + "@" + String((p).nIpv_G!))
+                                    }
+                                    if paraStr.contains("nIpv_H") {
+                                        myInv_nIpv_H.append(String((p).nIpv_H!))
+                                        sSNID_nIpv_H.append((p).sSNID + "@" + String((p).nIpv_H!))
+                                    }
+                                    if paraStr.contains("nIpv_I") {
+                                        myInv_nIpv_I.append(String((p).nIpv_I!))
+                                        sSNID_nIpv_I.append((p).sSNID + "@" + String((p).nIpv_I!))
+                                    }
+                                    if paraStr.contains("nIpv_J") {
+                                        myInv_nIpv_J.append(String((p).nIpv_J!))
+                                        sSNID_nIpv_J.append((p).sSNID + "@" + String((p).nIpv_J!))
+                                    }
+                                    if paraStr.contains("nIpv_K") {
+                                        myInv_nIpv_K.append(String((p).nIpv_K!))
+                                        sSNID_nIpv_K.append((p).sSNID + "@" + String((p).nIpv_K!))
+                                    }
+                                    if paraStr.contains("nIpv_L") {
+                                        myInv_nIpv_L.append(String((p).nIpv_L!))
+                                        sSNID_nIpv_L.append((p).sSNID + "@" + String((p).nIpv_L!))
                                     }
                                     
                                     
@@ -817,6 +925,54 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                                                     }
                                                                 }
                                                                 isGetPara = true
+                                                            case "nVpv_G":
+                                                                for kk in 0..<sSNID_nVpv_G.count {
+                                                                    var range = sSNID_nVpv_G[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_G[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_G[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nVpv_H":
+                                                                for kk in 0..<sSNID_nVpv_H.count {
+                                                                    var range = sSNID_nVpv_H[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_H[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_H[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nVpv_I":
+                                                                for kk in 0..<sSNID_nVpv_I.count {
+                                                                    var range = sSNID_nVpv_I[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_I[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_I[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nVpv_J":
+                                                                for kk in 0..<sSNID_nVpv_J.count {
+                                                                    var range = sSNID_nVpv_J[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_J[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_J[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nVpv_K":
+                                                                for kk in 0..<sSNID_nVpv_K.count {
+                                                                    var range = sSNID_nVpv_K[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_K[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_K[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nVpv_L":
+                                                                for kk in 0..<sSNID_nVpv_L.count {
+                                                                    var range = sSNID_nVpv_L[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nVpv_L[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nVpv_L[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
                                                             case "nIpv_A":
                                                                 for kk in 0..<sSNID_nIpv_A.count {
                                                                     var range = sSNID_nIpv_A[kk].range(of: "@")
@@ -862,6 +1018,54 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                                                     var range = sSNID_nIpv_F[kk].range(of: "@")
                                                                     if arr_Inv[i] == String(sSNID_nIpv_F[kk].prefix(upTo: range!.lowerBound))  {
                                                                         myInv_nPara.append(String(sSNID_nIpv_F[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_G":
+                                                                for kk in 0..<sSNID_nIpv_G.count {
+                                                                    var range = sSNID_nIpv_G[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_G[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_G[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_H":
+                                                                for kk in 0..<sSNID_nIpv_H.count {
+                                                                    var range = sSNID_nIpv_H[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_H[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_H[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_I":
+                                                                for kk in 0..<sSNID_nIpv_I.count {
+                                                                    var range = sSNID_nIpv_I[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_I[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_I[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_J":
+                                                                for kk in 0..<sSNID_nIpv_J.count {
+                                                                    var range = sSNID_nIpv_J[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_J[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_J[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_K":
+                                                                for kk in 0..<sSNID_nIpv_K.count {
+                                                                    var range = sSNID_nIpv_K[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_K[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_K[kk].suffix(from: range!.upperBound)))
+                                                                    }
+                                                                }
+                                                                isGetPara = true
+                                                            case "nIpv_L":
+                                                                for kk in 0..<sSNID_nIpv_L.count {
+                                                                    var range = sSNID_nIpv_L[kk].range(of: "@")
+                                                                    if arr_Inv[i] == String(sSNID_nIpv_L[kk].prefix(upTo: range!.lowerBound))  {
+                                                                        myInv_nPara.append(String(sSNID_nIpv_L[kk].suffix(from: range!.upperBound)))
                                                                     }
                                                                 }
                                                                 isGetPara = true
@@ -942,13 +1146,13 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
         var sDataKey: String
         var nEa: Double
         var nHi: Int
-        var nTmp: Int
+        var nTmp: Double
     }
     
     var mySite_sDataKey = [String]()
     var mySite_nEa = [Double]()
     var mySite_nHi = [Int]()
-    var mySite_nTmp = [Int]()
+    var mySite_nTmp = [Double]()
     
     func getSiteData() -> Bool {
         
@@ -1536,6 +1740,236 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                 } // for row in 0..<arr2D_F.count
             }
         }
+        if paraStr.contains("nVpv_G") {
+            if arr2D_F.count > 0 {
+                
+                for row in 0..<arr2D_F.count {
+                    
+                    var myList_str = [Any] ()
+                    
+                    if arr2D_F[row][1] == "nVpv_G" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                            
+                        }
+                        
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_G")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        
+                        //print(arr2D_F[row][0] + "-" + "nVpv_G" + ": Data is \(myList_str)")
+                    }
+                
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nVpv_H") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nVpv_H" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_H")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nVpv_H" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nVpv_I") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nVpv_I" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_I")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nVpv_I" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nVpv_J") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nVpv_J" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_J")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nVpv_J" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nVpv_K") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nVpv_K" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_K")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nVpv_K" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nVpv_L") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nVpv_L" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nVpv_L")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(1)
+                                                        //.color("#ffc069")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nVpv_L" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
         if paraStr.contains("nOVol") {
             if arr2D_F.count > 0 {
                 for row in 0..<arr2D_F.count {
@@ -1831,6 +2265,228 @@ class String_SiteVC: UIViewController, UIPopoverPresentationControllerDelegate {
                                                         .color(getColor())
                         )
                         //print(arr2D_F[row][0] + "-" + "nIpv_F" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_G") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_G" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_G")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_G" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_H") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_H" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_H")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_H" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_I") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_I" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_I")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_I" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_J") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_J" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_J")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_J" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_K") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_K" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_K")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_K" + ": Data is \(myList_str)")
+                    }
+                } // for row in 0..<arr2D_F.count
+            }
+        }
+        if paraStr.contains("nIpv_L") {
+            if arr2D_F.count > 0 {
+                for row in 0..<arr2D_F.count {
+                    var myList_str = [Any] ()
+                    if arr2D_F[row][1] == "nIpv_L" {
+                        for i in 0..<myInv_sDataKey_F.count {
+                            var db:Double = Double(arr2D_F[row][2+i])!
+                            if db == 999999 {
+                                myList_str.append("")
+                            } else {
+                                myList_str.append(db)
+                            }
+                        }
+                        
+                        var Str485:String = ""
+                        var temp_Int:Int = 0
+                        for ss in myInvList_sSNID {
+                            if ss == arr2D_F[row][0] {
+                                Str485 = ":" + myInvList_nRS485ID[temp_Int]
+                                break
+                            }
+                            temp_Int = temp_Int + 1
+                        }
+                        
+                        aaChartModel.series?.append(AASeriesElement()
+                                                        .name(arr2D_F[row][0] + Str485 + " " + "nIpv_L")
+                                                        .type(AAChartType.spline)
+                                                        .data(myList_str)
+                                                        .yAxis(2)
+                                                        //.color("#06caf4")
+                                                        .color(getColor())
+                        )
+                        //print(arr2D_F[row][0] + "-" + "nIpv_L" + ": Data is \(myList_str)")
                     }
                 } // for row in 0..<arr2D_F.count
             }

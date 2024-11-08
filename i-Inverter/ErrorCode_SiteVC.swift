@@ -32,7 +32,7 @@ class ErrorCode_SiteVC: UIViewController, UITableViewDataSource, UITableViewDele
         var ConChk: String
         var sSNID: String
         var nRS485ID: Int
-        var nEa: Int
+        var nEa: Double
         var dCreat_Time: String
         var sErrCode: String
     }

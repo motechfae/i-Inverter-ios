@@ -18,6 +18,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
     var myList2d_real = [String]()
     
     var myList_sSiteNo = [String]()
+    var myList_sSiteNo_real = [String]()
     
     //var myList2Darr = [[String]]()
     
@@ -48,6 +49,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
         print("11111")
         myList.removeAll()
         myList2d.removeAll()
+        myList_sSiteNo.removeAll()
         
         DispatchQueue.global().async{
             var JP: String?
@@ -95,6 +97,7 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
                         }
                         myList_real = myList
                         myList2d_real = myList2d
+                        myList_sSiteNo_real = myList_sSiteNo
                         
                         DispatchQueue.main.async{
                             self.collectionView.reloadData()
@@ -267,16 +270,19 @@ class CollectionViewController_2: UICollectionViewController, UICollectionViewDe
         
         self.myList.removeAll()
         self.myList2d.removeAll()
+        self.myList_sSiteNo.removeAll()
         for index in 0...(myList_real.count - 1){
             if (myList_real[index].lowercased().contains(searchBar.text!.lowercased())){
                 self.myList.append(myList_real[index])
                 self.myList2d.append(myList2d_real[index])
+                self.myList_sSiteNo.append(myList_sSiteNo_real[index])
             }
         }
                  
         if (searchBar.text!.isEmpty) {
             self.myList = self.myList_real
             self.myList2d = self.myList2d_real
+            self.myList_sSiteNo = self.myList_sSiteNo_real
         }
         self.collectionView.reloadData()
         
